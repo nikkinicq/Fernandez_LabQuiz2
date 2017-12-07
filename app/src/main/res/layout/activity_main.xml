@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff59d"
+    tools:context="com.fernandez.fernandez_labquiz.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/akatsukicloud" />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:textColor="#b71c1c"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:hint="user"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/et_user"
+        android:layout_centerHorizontal="true"
+        android:hint="password"
+        android:textAlignment="center"
+        android:textColor="#d50000"/>
+
+    <Button
+        android:id="@+id/btn_rm"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Remember Me!"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:background="#d50000"
+        android:textColor="#FFF"
+        android:onClick="callRememberMe"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:layout_toRightOf="@+id/btn_rm"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:background="#d50000"
+        android:textColor="#FFF"
+        android:onClick="callLogin"/>
+</RelativeLayout>
